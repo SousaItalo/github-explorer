@@ -1,7 +1,9 @@
 import React from 'react';
+import { FiChevronRight } from 'react-icons/fi';
 
 import logoImg from '../../assets/logo.svg';
 import { Title, Form, Repositories } from './styles';
+
 
 const Dashboard: React.FC = () => {
   return (
@@ -13,7 +15,20 @@ const Dashboard: React.FC = () => {
         <button type="submit">Pesquisar</button>
       </Form>
 
-      <Repositories></Repositories>
+      <Repositories>
+        <a href='teste'>
+          <img
+            src="https://avatars1.githubusercontent.com/u/11684877?s=460&u=4fa07a5bfb56758dafd3b1b2747dfa4e5ad2e867&v=4"
+            alt='Italo Sousa'
+          />
+          <div>
+            <strong>Github Explorer</strong>
+            <p>Explore git hub repositories all around the internet</p>
+          </div>
+
+          <FiChevronRight  size={20}/>
+        </a>
+      </Repositories>
 
     </>
   );
